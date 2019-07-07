@@ -1,15 +1,16 @@
-// Create a component named MessageComponent
-var HeaderComponent = React.createClass({
-    render: function() {
+import React from 'react';
+
+class SiteHeader extends React.Component {
+    render() {
       return (
-        <div>{this.props.message}</div>
+        <div className="shopping-list">
+          <h1>Shopping List for {this.props.name}</h1>
+          <ul>
+            <li>Instagram</li>
+            <li>WhatsApp</li>
+            <li>Oculus</li>
+          </ul>
+        </div>
       );
     }
-  });
-  
-  // Render an instance of HeaderComponent into document.body
-  ReactDOM.render(
-    <HeaderComponent message="Hello!" />,
-    document.body
-  );
-  
+  }
