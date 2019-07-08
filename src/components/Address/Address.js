@@ -18,7 +18,7 @@ class Address extends React.Component {
           <span property="name">Haut-Verdon</span>
         </div>
 
-        Téléphone: <span property="telephone">06 86 22 01 18</span>
+        Téléphone: <a href="+330686220118" property="telephone">06 86 22 01 18</a>
         
      
       </div>
