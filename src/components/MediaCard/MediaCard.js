@@ -21,7 +21,8 @@ const useStyles = makeStyles({
     //backgroundImage: `url(${Background})`,
     backgroundColor: 'rgba(0, 0, 0, 0.25)',
     minHeight: 200,
-    paddingTop: 50,
+    padding: 50,
+    fontSize:"0.8",
   },
 
 });

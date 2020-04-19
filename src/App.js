@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './assets/logo-cyril.jpg';
 import './App.css';
+import Box from '@material-ui/core/Box';
 import Address from './components/Address/Address';
 import AppBar from './components/AppBar/AppBar'
 import { makeStyles } from '@material-ui/core/styles';
@@ -28,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
     
   },
   logo: {
-    width: '300px',
+    maxWidth: '300px',
   },
 }));
 
@@ -48,16 +49,18 @@ function App() {
 
 
     <div className={classes.root}>
+
+
+
       <Grid container spacing={2}>
-        <Grid item xs={12}>
+
+
+        <Grid xs="12">
           <Paper className={classes.paper}>
-            
-          <MediaCard></MediaCard>
-
-
+          <MediaCard/>      
           </Paper>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={"12"} sm={"6"}>
           <Paper className={classes.paperLeft}>
           <Typography variant="h5" color="textSecondary" component="h2">
             Bienvenue chez Bicaïs Plomberie
@@ -81,13 +84,13 @@ function App() {
             </p>  
           </Paper>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={"12"} sm={"6"}>
           <Paper>
           <img src={logo} className={classes.logo} alt="Plombier vallée du Haut-Verdon"/>
             
             </Paper>
         </Grid>
-        <Grid item xs={12}>
+        <Grid item xs={"12"}>
         <Paper className={classes.paper}>
             <Address />
       </Paper>

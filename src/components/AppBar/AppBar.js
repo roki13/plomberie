@@ -12,6 +12,8 @@ import {  withStyles, makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
+    display: 'flex',
+    justifyContent: 'flex-end',
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -36,7 +38,9 @@ const BootstrapButton = withStyles({
     fontWeight: 'bold',
     lineHeight: 1.5,
     backgroundColor: '#0063cc',
-    borderColor: '#0063cc',    
+    borderColor: '#0063cc',
+    justifyItems: 'right',
+    alignItems: 'right',    
   },
 })(Button);
 
@@ -49,9 +53,10 @@ export default function ButtonAppBar() {
 
   return (
     <div className={classes.root}>
+      
       <AppBar position="static" color="transparent">
 
-        <Toolbar>
+        <Toolbar className="">
          
           <BootstrapButton variant="contained" color="primary" disableRipple className={classes.margin}
           href="tel:+33686220118">
