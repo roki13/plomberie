@@ -13,17 +13,19 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    height:200,
   },
   paper: {
     padding: theme.spacing(2),
     textAlign: 'center',
-    color: theme.palette.text.secondary,
+    //color: theme.palette.text.secondary,
     borderBlockStyle: 'none',
   },
   paperLeft: {
     padding: theme.spacing(2),
     textAlign: 'left',
     color: theme.palette.text.secondary,
+    
   },
   logo: {
     width: '300px',

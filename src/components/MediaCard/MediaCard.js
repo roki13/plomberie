@@ -15,12 +15,13 @@ const useStyles = makeStyles({
     
   },
   media: {
-    height: 140,
+    height: 100,
   },
   background: {
-    backgroundImage: `url(${Background})`,
-    backgroundColor: 'rgba(0, 0, 0, 0.85)',
-    minHeight: 300,
+    //backgroundImage: `url(${Background})`,
+    backgroundColor: 'rgba(0, 0, 0, 0.25)',
+    minHeight: 200,
+    paddingTop: 50,
   },
 
 });
