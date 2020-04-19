@@ -1,9 +1,10 @@
 import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
+import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/core/Menu';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-import {  purple } from '@material-ui/core/colors';
 import {  withStyles, makeStyles } from '@material-ui/core/styles';
 
 
@@ -14,6 +15,7 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1,
     display: 'flex',
     justifyContent: 'flex-end',
+    backgroundColor:'#eeeeee',
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -27,6 +29,7 @@ const useStyles = makeStyles(theme => ({
     float: 'right',
   },
 }));
+
 
 const BootstrapButton = withStyles({
   root: {
@@ -46,19 +49,23 @@ const BootstrapButton = withStyles({
 
 
 export default function ButtonAppBar() {
-  
-  
+
 
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
       
-      <AppBar position="static" color="transparent">
+      <AppBar position="static" className={classes.root}>
 
         <Toolbar className="">
-         
-          <BootstrapButton variant="contained" color="primary" disableRipple className={classes.margin}
+        <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+          <MenuIcon />
+        </IconButton>
+
+          <BootstrapButton edge="end" 
+          anchorEl="right"
+          variant="contained" color="primary" disableRipple className={classes.margin}
           href="tel:+33686220118">
             06 86 22 01 18
         </BootstrapButton>

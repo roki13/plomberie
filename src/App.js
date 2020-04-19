@@ -4,12 +4,13 @@ import './App.css';
 import Box from '@material-ui/core/Box';
 import Address from './components/Address/Address';
 import AppBar from './components/AppBar/AppBar'
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, createMuiTheme } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import MediaCard from './components/MediaCard/MediaCard';
 
 import Typography from '@material-ui/core/Typography';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -32,6 +33,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: '300px',
   },
 }));
+
 
 
 function App() {
@@ -66,13 +68,13 @@ function App() {
             Bienvenue chez Bicaïs Plomberie
         </Typography>
             <p>
-            Installé dans la vallée du Haut-Verdon, je peux intervenir rapidement pour toutes urgence 24h/24 ou simple demande de devis Gratuit. <br></br>
-            Spécialisé dans le domaine de la plomberie, je saurai répondre à vos besoins rapidement en proposant un service de qualité.
+            Installé dans la vallée du Haut-Verdon, je peux intervenir rapidement pour toutes <b>urgence 24h/24</b> ou simple demande de devis Gratuit. <br></br>
+            Spécialisé dans le domaine de la plomberie, je saurai répondre à vos besoins rapidement en proposant un <b>service de qualité</b>.
             </p>
             <p>
             Une <b>fuite</b> ? Des <b>WC</b> ou un évier bouchés ? Ou une panne de chauffe eau ? Je suis équipé pour vous fournir une prestation de service rapide et efficace.
             </p><p>
-            Appelez-moi dès maintenant, les devis sont gratuits !
+            Appelez-moi dès maintenant, le devis est gratuit !
             </p><p>
             Recherche et réparation de fuite<br/>
             Débouchage de canalisation<br/>
