@@ -29,7 +29,7 @@ export default function MediaCard() {
     <div className={classes.background}>
 
     <ThemeProvider theme={theme}>
-      <Typography variant="h1" color="textSecondary" component="h1">
+      <Typography variant="h2" color="textSecondary" component="h1">
           Bicaïs Plomberie
       </Typography>
       <Typography variant="h5" color="textSecondary" component="h2">
