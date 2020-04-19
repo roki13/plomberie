@@ -21,18 +21,10 @@ const useStyles = makeStyles(theme => ({
   },
   margin: {
     margin: theme.spacing(1),
+    boxAlign: 'right',
+    float: 'right',
   },
 }));
-
-const ColorButton = withStyles((theme) => ({
-  root: {
-    color: theme.palette.getContrastText(purple[500]),
-    backgroundColor: purple[500],
-    '&:hover': {
-      backgroundColor: purple[700],
-    },
-  },
-}))(Button);
 
 const BootstrapButton = withStyles({
   root: {
@@ -44,35 +36,7 @@ const BootstrapButton = withStyles({
     fontWeight: 'bold',
     lineHeight: 1.5,
     backgroundColor: '#0063cc',
-    borderColor: '#0063cc',
-    fontFamily: [
-      '-apple-system',
-      'BlinkMacSystemFont',
-      '"Segoe UI"',
-      'Roboto',
-      '"Helvetica Neue"',
-      'Arial',
-      'sans-serif',
-      '"Apple Color Emoji"',
-      '"Segoe UI Emoji"',
-      '"Segoe UI Symbol"',
-    ].join(','),
-    '&:hover': {
-      backgroundColor: '#0069d9',
-      borderColor: '#0062cc',
-      boxShadow: 'none',
-    },
-    '&:active': {
-      boxShadow: 'none',
-      backgroundColor: '#0062cc',
-      borderColor: '#005cbf',
-    },
-    '&:focus': {
-      boxShadow: '0 0 0 0.2rem rgba(0,123,255,.5)',
-    },
-    '&:link': {
-      color: '#ffffff',
-    },
+    borderColor: '#0063cc',    
   },
 })(Button);
 
@@ -85,9 +49,10 @@ export default function ButtonAppBar() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="static" color="transparent">
+
         <Toolbar>
-          
+         
           <BootstrapButton variant="contained" color="primary" disableRipple className={classes.margin}
           href="tel:+33686220118">
             06 86 22 01 18
