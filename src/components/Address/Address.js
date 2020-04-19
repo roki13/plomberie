@@ -7,8 +7,7 @@ class Address extends React.Component {
   
        
         <div vocab="http://schema.org/" typeof="Plumber">
-        <span property="name">Bicaïs Plomberie</span>
-       
+        <span property="name">Bicaïs Plomberie</span>       
        
         <div property="address" typeof="PostalAddress">
           <span property="streetAddress">5 Allée des Asphodèles</span><br/>

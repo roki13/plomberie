@@ -8,15 +8,14 @@ import AppBar from './components/AppBar/AppBar'
 function App() {
   return (
 
-    
     <div className="App">
-  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <AppBar></AppBar>
       <header className="App-header">
       
         <Title name="Bicaïs Plomberie" />
 
-        <img src={logo} className="App-logo" alt="logo" with="350" />
+        <img src={logo} className="App-logo" alt="Plombier vallée du Haut-Verdon" with="350" />
 
         <Address />
 
