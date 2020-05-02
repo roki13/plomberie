@@ -33,7 +33,7 @@ export default function MediaCard() {
           Bicaïs Plomberie
       </Typography>
       <Typography variant="h5" color="textSecondary" component="h2">
-          Plombier diplomé dans le Haut-Verdon
+          Plombier diplomé dans le Val d'Allos
       </Typography>
       </ThemeProvider>
 

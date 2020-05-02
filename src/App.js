@@ -68,7 +68,7 @@ function App() {
             Bienvenue chez Bicaïs Plomberie
         </Typography>
             <p>
-            Installé dans la vallée du Haut-Verdon, je peux intervenir rapidement pour toutes <b>urgence 24h/24</b> ou simple demande de devis Gratuit. <br></br>
+            Installé dans e Val d'Allos, je peux intervenir rapidement pour toute <b>urgence 24h/24</b> ou simple demande de devis Gratuit. <br></br>
             Spécialisé dans le domaine de la plomberie, je saurai répondre à vos besoins rapidement en proposant un <b>service de qualité</b>.
             </p>
             <p>
@@ -88,7 +88,7 @@ function App() {
         </Grid>
         <Grid item xs={"12"} sm={"6"}>
           <Paper>
-          <img src={logo} className={classes.logo} alt="Plombier vallée du Haut-Verdon"/>
+          <img src={logo} className={classes.logo} alt="Plombier Val d'Allos du Haut-Verdon"/>
             
             </Paper>
         </Grid>
