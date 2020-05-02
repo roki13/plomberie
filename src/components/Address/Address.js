@@ -17,7 +17,7 @@ class Address extends React.Component {
           <span property="postalCode">04370</span> <span property="addressLocality">Beauvezer</span>,
         </div>
         <div property="validIn" typeof="AdministrativeArea">
-          <span property="name">Haut-Verdon, Alpes-de-Haute-Provence</span>
+          <span property="name">Val d'Allos, Alpes-de-Haute-Provence</span>
         </div>
 
         Téléphone: <a href="tel:+330686220118" property="telephone">06 86 22 01 18</a>
